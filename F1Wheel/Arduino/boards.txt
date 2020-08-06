@@ -1,0 +1,100 @@
+##############################################################
+#### Add the following text to your boards.txt in ardiono
+##############################################################
+
+krappymicro.name=Krappy Micro
+
+krappymicro.vid.0=0x2341
+krappymicro.pid.0=0x0037
+krappymicro.vid.1=0x2341
+krappymicro.pid.1=0x8037
+krappymicro.vid.2=0x2A03
+krappymicro.pid.2=0x0037
+krappymicro.vid.3=0x2A03
+krappymicro.pid.3=0x8037
+
+krappymicro.vid.4=0x2341
+krappymicro.pid.4=0x0237
+# If the board is a 2341:0237 use 2341:8237 for build and set
+# other parameters as well
+krappymicro.vid.4.build.vid=0x2341
+krappymicro.vid.4.build.pid=0x8237
+krappymicro.vid.4.build.usb_product="Arduino Micro KrappyButtons"
+krappymicro.vid.4.bootloader.file=caterina/Caterina-Genuino-Micro.hex
+
+krappymicro.vid.5=0x2341
+krappymicro.pid.5=0x8237
+# If the board is a 2341:8237 use 2341:8237 for build and set
+# other paramters as well
+krappymicro.vid.5.build.vid=0x2341
+krappymicro.vid.5.build.pid=0x8237
+krappymicro.vid.5.build.usb_product="Arduino Micro KrappyButtons"
+krappymicro.vid.5.bootloader.file=caterina/Caterina-Genuino-Micro.hex
+
+krappymicro.upload.tool=avrdude
+krappymicro.upload.protocol=avr109
+krappymicro.upload.maximum_size=28672
+krappymicro.upload.maximum_data_size=2560
+krappymicro.upload.speed=57600
+krappymicro.upload.disable_flushing=true
+krappymicro.upload.use_1200bps_touch=true
+krappymicro.upload.wait_for_upload_port=true
+
+krappymicro.bootloader.tool=avrdude
+krappymicro.bootloader.low_fuses=0xff
+krappymicro.bootloader.high_fuses=0xd8
+krappymicro.bootloader.extended_fuses=0xcb
+krappymicro.bootloader.file=caterina/Caterina-Micro.hex
+krappymicro.bootloader.unlock_bits=0x3F
+krappymicro.bootloader.lock_bits=0x2F
+
+krappymicro.build.mcu=atmega32u4
+krappymicro.build.f_cpu=16000000L
+krappymicro.build.vid=0xdead
+krappymicro.build.pid=0xd038
+krappymicro.build.usb_product="KrappyButtons"
+krappymicro.build.board=AVR_MICRO
+krappymicro.build.core=arduino
+krappymicro.build.variant=micro
+krappymicro.build.extra_flags={build.usb_flags}
+
+menu.usb_name="USB Name and PID"
+krappymicro.menu.usb_name.krappymicro="Krappy Micro"
+krappymicro.menu.usb_name.krappymicro.build.usb_product="KrappyMicro"
+krappymicro.menu.usb_name.krappymicro.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro.build.pid=0xd110
+
+krappymicro.menu.usb_name.krappymicro_1="Krappy Buttons"
+krappymicro.menu.usb_name.krappymicro_1.build.usb_product="KrappyButtons"
+krappymicro.menu.usb_name.krappymicro_1.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_1.build.pid=0xd111
+
+krappymicro.menu.usb_name.krappymicro_2="Krappy Wheel"
+krappymicro.menu.usb_name.krappymicro_2.build.usb_product="KrappyWheel"
+krappymicro.menu.usb_name.krappymicro_2.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_2.build.pid=0xd112
+
+krappymicro.menu.usb_name.krappymicro_3="Krappy Base"
+krappymicro.menu.usb_name.krappymicro_3.build.usb_product="KrappyBase"
+krappymicro.menu.usb_name.krappymicro_3.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_3.build.pid=0xd113
+
+krappymicro.menu.usb_name.krappymicro_4="Krappy Pedals"
+krappymicro.menu.usb_name.krappymicro_4.build.usb_product="KrappyPedals"
+krappymicro.menu.usb_name.krappymicro_4.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_4.build.pid=0xd114
+
+krappymicro.menu.usb_name.krappymicro_5="Krappy Keyboard"
+krappymicro.menu.usb_name.krappymicro_5.build.usb_product="KrappyKeyboard"
+krappymicro.menu.usb_name.krappymicro_5.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_5.build.pid=0xd115
+
+krappymicro.menu.usb_name.krappymicro_6="Krappy Joystick"
+krappymicro.menu.usb_name.krappymicro_6.build.usb_product="KrappyJoystick"
+krappymicro.menu.usb_name.krappymicro_6.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_6.build.pid=0xd116
+
+krappymicro.menu.usb_name.krappymicro_7="Krappy Handbrake"
+krappymicro.menu.usb_name.krappymicro_7.build.usb_product="KrappyHandbrake"
+krappymicro.menu.usb_name.krappymicro_7.build.vid=0xdead
+krappymicro.menu.usb_name.krappymicro_7.build.pid=0xd117
