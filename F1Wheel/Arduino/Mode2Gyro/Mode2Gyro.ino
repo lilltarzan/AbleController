@@ -143,7 +143,7 @@ void loop() {
     cl = map(clRaw, CLUTCH_MIN, CLUTCH_MAX,0,1023);
   }
   cl = limit(cl, 0, 1023);
-  Joystick.setZAxis(cl);
+  Joystick.setZAxis(0);
 
   
   Joystick.setYAxis(0);
