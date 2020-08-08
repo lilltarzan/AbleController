@@ -26,8 +26,8 @@
 #define REV_STEERING 1
 #define UPSIDEDOWN 0
 
-double totalTurnAngle = 360; // 360 is 180 to each side. typical road car have ~900
-#define ALLOW_MULTITURNS
+double totalTurnAngle = 270; // 360 is 180 to each side. typical road car have ~900
+//#define ALLOW_MULTITURNS
 
 
 // ####### End of Configuration
